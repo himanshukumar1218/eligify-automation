@@ -1,6 +1,6 @@
-# Sarkari Result Scraper
+# Eligify
 
-Node.js service that monitors the Sarkari Result homepage, detects new job postings, extracts official notification PDFs from detail pages, and pushes discovered jobs to a BullMQ queue backed by Supabase Postgres and Supabase Storage.
+Node.js service that monitors government sites homepage, detects new job postings, extracts official notification PDFs from detail pages, and pushes discovered jobs to a BullMQ queue backed by Supabase Postgres and Supabase Storage.
 
 ## Features
 

@@ -1,0 +1,30 @@
+{
+  "name": "sarkari-result-scraper",
+  "version": "1.0.0",
+  "description": "Resilient Playwright scraper for Sarkari Result job postings",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "postinstall": "node scripts/fix-pdf-img-convert.mjs",
+    "start": "node src/index.js",
+    "run-once": "node src/index.js --run-once",
+    "worker": "node src/worker.js",
+    "requeue-pending": "node src/requeuePending.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.8",
+    "axios": "^1.9.0",
+    "bullmq": "^5.46.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-cron": "^4.2.1",
+    "pdf-img-convert": "^2.0.0",
+    "pdf-parse": "^1.1.1",
+    "pg": "^8.14.1",
+    "pino": "^9.7.0",
+    "playwright": "^1.52.0",
+    "redis": "^5.1.1",
+    "tesseract.js": "^6.0.1"
+  }
+}
